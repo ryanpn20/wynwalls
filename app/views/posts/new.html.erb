@@ -1,0 +1,22 @@
+<section class="main_page">
+  <div class="main_page_inner">
+    <h1>New Post</h1>
+  </div>
+</section>
+
+<hr>
+
+<div class="main_page_inner">
+  <%= form_for @post, html: { multipart: true } do |f| %>
+    <h4><%= f.label :image %></h4>
+    <p><%= f.file_field :image %></p>
+    <br>
+    <h4><%= f.label :description %></h4>
+    <p><%= f.text_area :description%></p>
+    <br>
+
+    <p>
+      <%= f.submit %>
+    </p>
+  <% end %>
+</div>

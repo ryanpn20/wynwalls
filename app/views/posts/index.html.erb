@@ -1,0 +1,58 @@
+<!-- <% @posts.each do |x| %>
+  <div class="white">
+    <%= image_tag x.image.url(:medium) %>
+    <br>
+    <%= x.description %>
+    <br>
+  </div>
+  <br>
+<% end %> -->
+
+
+  <!-- SIDE BAR -->
+  <!-- <i class="fa fa-bars toggle_menu"></i> -->
+
+    <div class="sidebar_menu hide_menu"><!--added toggle_menu here and changed opacity to 1 in toggle_menu-->
+      <i class="fa fa-times"></i>
+
+      <center>
+        <a href="index.html"><h1 class="boxed_item">Wynwood <span class="logo_bold">Miami</span></h1></a>
+
+        <h1 class="logo_title">Latest uploads</h1>
+      </center>
+
+      <ul class="navigation_selection">
+        <li class="navigation_item"><img alt="W3Schools" src="banksy_wynwood.jpg" width="185" height="150"></li>
+        <li class="navigation_item"><img alt="W3Schools" src="wall1.jpg" width="185" height="150"></li>
+        <li class="navigation_item"><img alt="W3Schools" src="wall2.jpg" width="185" height="150"></li>
+        <!-- <li class="navigation_item"><img alt="W3Schools" src="wall3.jpeg" width="185" height="150"></li> -->
+
+      </ul>
+
+      <center>
+        <a href="#">
+        <h1 class="boxed_item boxed_item_smaller">
+          <i class="fa fa-map"></i>
+          OPEN BLOCK
+        </h1>
+        </a>
+      </center>
+    </div>
+    <!-- END SIDE BAR -->
+    <!-- <section class="main_page">
+      <div class="main_page_inner">
+        <h1>Wynwood Map</h1>
+      </div>
+    </section> -->
+
+    <div class="main_page">
+      <div id="map" class="frame-container">
+        <!-- removed the javascript for the map -->
+      </div>
+    </div>
+
+
+
+
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBw9WSzWaGObraR2M-jSWiHk5jD1SiP41Q&callback=initMap"></script>
